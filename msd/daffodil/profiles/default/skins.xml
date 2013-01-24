@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="melipona">
+
+ <object name="msd_daffodil"
+    meta_type="Filesystem Directory View"
+    directory="msd.daffodil:skins/msd_daffodil"/>
+
+ <skin-path name="*">
+  <layer name="msd_daffodil"
+     insert-after="custom"/>
+ </skin-path>
+
+</object>

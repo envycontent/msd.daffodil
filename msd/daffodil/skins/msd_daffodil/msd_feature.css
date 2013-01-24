@@ -1,0 +1,30 @@
+.feature-listing .tileFooter a{
+padding:1px 0 1px 24px;
+font-weight:bold;
+background:url(arrow_round_green.png) no-repeat 0 0;
+}
+
+
+.feature-listing .tileFooter a:hover{
+background:url(arrow_round_green_hover.png) no-repeat 0 0;
+color:black;
+}
+
+.documentContent .feature-listing .tileFooter a{
+border:0;
+}
+
+.feature-listing .category{
+margin:0 0 1em 0;
+padding:0;
+}
+
+
+.feature-listing .category li{
+display:inline;
+font-size:0.9em;
+color:#595959;
+padding-left:9px;
+padding-right:2px;
+background:url(dot_light.gif) no-repeat 0 50%;
+}

@@ -1,0 +1,6 @@
+<layers>
+ <layer
+     name="msd.daffodil"
+     interface="msd.daffodil.interfaces.IAddOnInstalled"
+     />
+</layers>

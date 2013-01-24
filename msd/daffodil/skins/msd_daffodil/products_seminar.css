@@ -1,0 +1,241 @@
+/*
+#content .seminar {
+border-top:2px solid #CCCCCC;
+clear:both;
+line-height:1.8em;
+padding-top:10px;
+}
+
+
+.date {
+float:left;
+font-size:1.5em;
+padding:0;
+width:100px;
+} 
+
+
+.seminar h2 {
+border:0 none;
+clear:none;
+font-size:1.2em;
+margin:0 0 0 120px;
+padding:0;
+width:350px;
+}
+
+.speaker {
+font-weight:bolder;
+}
+
+.speaker, .time, .location, .readmore {
+clear:none;
+margin-left:120px;
+}
+
+
+.download_event {
+clear:left;
+float:left;
+padding-bottom:1em;
+width:100px;
+}
+
+.download_event a {
+border:0 none;
+display:block;
+text-decoration:none;
+}
+
+#feeds {
+float:right;
+width:250px;
+}
+
+#feeds a {
+border:0 none;
+display:block;
+padding:7px 0 8px 34px;
+}
+
+#ics {
+background:transparent url(ics-icon-28x28.png) no-repeat scroll 0 0;
+}
+
+
+#allseminars, #allvacancies {
+background:transparent url(arrow.gif) no-repeat scroll 0 2px;
+margin-top:10px;
+padding:0 0 0 23px;
+}
+
+*/
+
+
+/* seminars compact listing */
+.template-seminar_series_listing_compact .seminar, 
+.template-seminar_folder_listing_compact .seminar {
+border-top:2px solid #D9E9F2;
+clear:both;
+line-height:1.2em;
+padding-top:7px;
+margin-top:5px;
+}
+
+.template-seminar_series_listing_compact h1, 
+.template-seminar_folder_listing_compact h1 {
+color:#44687D;
+margin-bottom:0.3em;
+}
+
+.template-seminar_series_listing_compact .term_year, 
+.template-seminar_folder_listing_compact .term_year {
+font-size:1.2em;
+color:#44687D;
+margin-bottom:1em;
+}
+.template-seminar_series_listing_compact .dtstart,
+.template-seminar_folder_listing_compact .dtstart
+{
+float:left;
+color:#742211;
+font-weight:bolder;
+font-size:0.9em;
+padding:0;
+width:110px;
+clear:both;
+} 
+
+#series_location, #series_time, #series_contact {
+margin-bottom:0.6em;
+}
+
+.template-seminar_series_listing_compact .label, 
+.template-seminar_folder_listing_compact .label {
+font-weight:bolder;
+width:6em;
+float:left;	
+}
+
+
+.template-seminar_series_listing_compact .seminar h2,
+.template-seminar_folder_listing_compact .seminar h2 {
+border:0 none;
+clear:none;
+font-size:1.1em;
+line-height:1.3em;
+margin:0 0 5px 110px;
+padding:0;
+width:618px;
+}
+
+.template-seminar_series_listing_compact .location, 
+.template-seminar_series_listing_compact .time {
+display:none;
+}
+
+
+
+.template-seminar_series_listing_compact .more,
+.template-seminar_folder_listing_compact .more {
+margin-left:110px;
+font-size:0.9em;	
+}
+
+.template-seminar_series_listing_compact .speaker,
+.template-seminar_folder_listing_compact .speaker {
+font-weight:bolder;
+margin-left:110px;
+}
+
+.override_time{
+font-weight:normal;
+background-color:#FFBACE;
+width:80px;
+padding:4px;
+}
+
+.template-seminar_series_listing_compact .speaker, 
+.time,  
+.template-seminar_series_listing_compact .readmore {
+clear:none;
+margin-left:110px;
+}
+
+.template-seminar_folder_listing_compact .location {
+margin:0.5em 0 0.5em 0;
+margin-left:110px;
+}
+
+
+.template-seminar_series_listing_compact #feeds,
+.template-seminar_folder_listing_compact #feeds {
+float:none;
+width:618px;
+}
+
+.template-seminar_series_listing_compact #feeds a, 
+.template-seminar_series_listing_compact .more a,
+.template-seminar_folder_listing_compact #feeds,
+.template-seminar_folder_listing_compact .more a {
+border:0 none;
+display:inline;
+padding:0;
+color:#142d57;
+text-decoration:none;
+font-size:0.9em;
+margin-right:10px;
+}
+
+.template-seminar_series_listing_compact #feeds a:hover, 
+.template-seminar_series_listing_compact .more a:hover,
+.template-seminar_folder_listing_compact #feeds a:hover,
+.template-seminar_folder_listing_compact .more a:hover {
+border-bottom:1px solid #142d57;
+}
+
+
+.template-seminar_series_listing_compact #ics,
+.template-seminar_folder_listing_compact #ics {
+background:none;
+/*background:transparent url(ics-icon-28x28.png) no-repeat scroll 0 0;*/
+}
+
+
+.portlet .seminar{
+border-bottom:2px solid #E0E0E0;
+font-size:0.9em;
+padding:0 0 5px;
+clear:both;
+overflow:auto;
+}
+
+
+.portlet .seminar .dtstart{
+border:1px solid #CCCCCC;
+clear:both;
+float:left;
+padding:2px;
+text-align:center;
+width:28px;
+margin-right:0px;
+outline:0px solid red;
+}
+
+.portlet .compact .dtstart{
+border:0px solid #CCCCCC;
+clear:both;
+color:#6e6e6e;
+float:none;
+padding:0px;
+text-align:center;
+width:100%;
+font-size:1.3em;
+outline:0px solid red;
+}
+
+
+.portlet .compact h3{
+padding:0;
+margin:0px;
+}

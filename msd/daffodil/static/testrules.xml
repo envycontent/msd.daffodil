@@ -1,0 +1,7 @@
+<rules xmlns="http://namespaces.plone.org/xdv">
+
+    <!-- Copy over the contents of the page body -->
+    <replace content='//*[@id="content"]'    
+               theme='//*[@id="my-content-area"]' />
+
+</rules>

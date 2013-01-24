@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<registry>
+	<record field="notheme" interface="collective.xdv.interfaces.ITransformSettings" name="collective.xdv.interfaces.ITransformSettings.notheme">
+		<default>
+			<element>^.*/referencebrowser_popup$</element>
+			<element>^.*/manage_(?!translations_form)[^/]+$</element>
+			<element>^.*/manage$</element>
+			<element>^.*/image_view_fullscreen$</element>
+			<element>^.*/emptypage$</element>
+			<element>^.*/error_log(/.*)?$</element>
+			<element>^.*/aq_parent(/.*)?$</element>
+			<element>^.*/portal_javascripts(/.*)?$</element>
+		</default>
+		<description>Specify paths that should not be styled. May use regular expression syntax</description>
+		<required>False</required>
+		<title>Unstyled paths</title>
+		<value_type type="plone.registry.field.TextLine">
+			<title>Path</title>
+		</value_type>
+		<value>
+			<element>^.*/manage_(?!translations_form)[^/]+$</element>
+			<element>^.*/tinymce-upload$</element>
+			<element>^.*/tinymce-jsonimagefolderlisting/.*$</element>
+			<element>^.*/portal_javascript/.*</element>
+			<element>^.*/error_log(/.*)?$</element>
+			<element>^.*/plugins/.*$</element>
+			<element>^.*/referencebrowser_popup(\?.*)?$</element>
+			<element>^.*/image_view_fullscreen$</element>
+			<element>^.*/emptypage$</element>
+			<element>^.*/manage$</element>
+			<element>^.*/aq_parent(/.*)?$</element>
+			<element>^.*/themes/advanced/.*$</element>
+		</value>
+	</record>
+</registry>

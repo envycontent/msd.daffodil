@@ -1,0 +1,118 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<head>
+    <metal:noborder fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+</head>
+
+<body>
+<div metal:fill-slot="main">
+
+	<h1 class="documentFirstHeading">Accessibility</h1>
+
+	    <h2>Standards</h2>
+	    <p>This site is taking steps to meet the <a href="http://www.ox.ac.uk/web/accessibility.html#aour_conformance_claim_for_this_site">
+
+	     University's minimum standard for web accessibility</a> - compliance with the <a href="http://www.w3.org">
+	     World Wide Web Consortium</a> (W3C) <strong>AA</strong> guidelines. 
+	    </p>
+
+
+	    <h2>Alternative Formats</h2>
+
+  	<p>If you have problems accessing the site or if you 
+	require any part of the content in an alternative format, 
+	please <a href="#footer">get in touch with us</a></p>
+
+
+
+
+	<h2>Access keys</h2>
+
+
+
+	    <p>
+	    Access keys are a navigation device enabling you to get around this web
+	    site using your keyboard.
+	    </p>
+
+	    <p>
+
+	    In-depth information about access keys can be found at <a href="http://www.w3.org/TR/WCAG10-HTML-TECHS/#link-accesskey">W3C Accessibility Guidelines</a>.
+	    </p>
+
+	    <h3>Available access keys</h3>
+	        <p>This site uses a setup that closely matches most international
+	    recommendations on access keys. These are:
+	    </p>
+
+	    <ul>
+	        <li>1 &mdash; Home Page</li>
+	        <li>2 &mdash; Skip to content</li>
+            <li>3 &mdash; Sitemap </li>
+            <li>4 &mdash; Search</li>
+	        <li>0 &mdash; Access Key details</li>
+	    </ul>
+
+	    <h3>Using access keys in different web browsers</h3>
+
+	    <dl>
+	        <dt>Internet Explorer</dt>
+
+	        <dd>
+	        Hold down the <code>Alt</code> key, press the number or letter of the access key, release both keys then press ENTER. 
+	        </dd>       
+	
+	        <dt>Firefox, Mozilla and Netscape 7+ (Windows)</dt>
+
+	        <dd>
+	        Hold down the <code>Alt</code> key and press the number or letter of 
+	        the access key.
+	        </dd>
+
+	        <dt>Firefox, Mozilla and Netscape 7+ (Mac OS X)</dt>
+
+	        <dd>
+	        Hold down the <code>Ctrl</code> key and press the number or letter of 
+	        the access key.
+	        </dd>
+
+	        <dt>Safari and Omniweb (Mac OS X)</dt>
+	        <dd>
+	        Hold down the <code>Ctrl</code> key and press the number or letter of 
+	        the access key.
+	        </dd>
+	    </dl> 
+
+
+		    <h3>Enlarging Text </h3>
+
+		    <p>You can scale the text and menus up and down - </p>
+		    <dl>
+
+		      <dt><strong>Internet-Explorer:</strong> </dt> 
+	            <dd>In the menu, select View &gt; Text Size.</dd>
+		     
+
+		      <dt><strong>Firefox:</strong> </dt>
+	            <dd>In the menu, select View &gt; Text Zoom.</dd>
+	
+				<dt><strong>Safari:</strong> </dt>
+		            <dd>In the menu, select View &gt; Zoom in.</dd>
+
+		      <dt><strong>Opera:</strong> </dt>
+
+	            <dd>In the menu, select View &gt; Zoom.</dd>
+
+	    </dl>
+
+
+    </div>
+</body>
+</html>

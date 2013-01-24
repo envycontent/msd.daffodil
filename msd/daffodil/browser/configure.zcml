@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="msd.daffodil">
+
+  <!-- 'daffodil' Zope 3 browser layer -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="daffodil"
+      />
+      
+  <!-- register the layout view -->
+
+  <browser:page
+      name="melipona_layout"
+      for="*"
+      permission="zope.Public"
+      class=".layout.MeliponaLayoutPolicy"
+      allowed_interface="msd.melipona.browser.interfaces.IMeliponaLayoutPolicy"
+      layer="msd.daffodil.interfaces.IAddOnInstalled"
+      />
+  
+
+</configure>

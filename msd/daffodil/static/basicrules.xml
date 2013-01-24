@@ -1,0 +1,64 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	
+     <!-- Copy over the title and base tags -->
+    <replace css:content='title' css:theme='title' />
+
+	<replace css:content='base' css:theme='base' />
+
+	<after content='/html/head/script' theme-children='/html/head' />
+	
+	<!-- use before to make sure your own stylesheet is called last -->
+	<after content="/html/head/link" theme-children="/html/head"/> 
+	<before content="/html/head/style" theme-children="/html/head"/>
+	
+	<replace css:content='#skiplinks' css:theme='#skiplinks' />
+
+<!--
+removing personal tools temporarily	
+	<replace css:content-children='#portal-personaltools' css:theme-children='#personaltools' />
+	
+-->
+
+	<copy theme="/html/body" content="/html/body" attributes="class id dir" /> 
+
+    <replace css:content-children="#siteaction-accessibility" css:theme-children="#accessibility" />
+
+	<replace css:content-children="#siteaction-sitemap" css:theme-children="#sitemap" />
+	
+	<replace css:content='#portal-advanced-search' theme='#advancedsearch' />   
+
+	 <!-- Global navigation -->
+	 <replace css:content-children='#portal-globalnav' css:theme-children='#globalnav' />
+
+<copy attributes="href" css:theme="#logo a" css:content="#portal-logo" />
+
+
+
+	 <!-- breadcrumb trail  -->
+	 <after css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
+
+	  <!-- copy the content --> 
+	 <replace css:content-children='#portal-column-one' css:theme-children='#sidebar_left' css:if-content="" />
+	<copy attributes="class" css:theme="#sidebar_left" css:content="#portal-column-one"/>
+	<drop css:theme="#sidebar_left" if-content="not(//*[@id='portal-column-one'])"/>
+	
+	 <replace css:content-children='#portal-column-two' css:theme-children='#sidebar_right' css:if-content="#portal-column-two"/>
+	<copy attributes="class" css:theme="#sidebar_right" css:content="#portal-column-two"/>
+	<drop css:theme="#sidebar_right" if-content="not(//*[@id='portal-column-two'])"/>
+	
+	
+	 <replace css:content-children='#portal-column-content' css:theme-children='#content' />
+	<copy attributes="class" css:theme="#content" css:content="#portal-column-content"/>
+	
+	<!-- footer -->
+	
+	 <replace css:content-children='#footer' css:theme-children='#footer' />
+	
+
+</rules>
+
